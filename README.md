@@ -52,8 +52,6 @@ The analysis follows the **7 Cs of credit analysis** and is presented in a writt
 - The two moved in opposite directions on segment risk. Bajaj cut its high-risk share by almost half, while Mahindra's grew.
 - Bajaj's return on assets stayed well above Mahindra's in every year.
 
-> Figures come from the master dataset in this repository. See the [caveats](#data-quality-and-caveats) before comparing across companies.
-
 ## Methodology
 
 ```mermaid
@@ -120,21 +118,6 @@ nbfc-credit-analysis/
 | `reports/Bajaj_vs_Mahindra_7Cs_Combined.pdf` | Full written analysis using the 7 Cs framework |
 | `reports/NBFC_Credit_Analysis_Presentation.pptx` | Slide deck summarising the findings |
 
-## How to run
-
-The notebooks are built for **Google Colab**, because they use Colab's file upload.
-
-1. Open `notebooks/Financial_Assignment.ipynb` in [Google Colab](https://colab.research.google.com/) (File → Upload notebook).
-2. Run the first cell and, when asked, upload both files from `data/raw/`.
-3. Run the remaining cells in order. The notebook exports `NBFC_master_dataset.xlsx` and `NBFC_master_panel.csv`.
-4. Repeat for `notebooks/NBFC_Credit_Analytics.ipynb`.
-
-To run locally, install the requirements and replace the `files.upload()` step with the paths to the raw files:
-
-```bash
-pip install -r requirements.txt
-jupyter notebook
-```
 
 **requirements.txt**
 ```
@@ -165,8 +148,7 @@ Financial statement and credit-risk analysis · data cleaning and reconciliation
 ## Author
 
 **Nandini Sharma**
-MSc Economics (2025–27), Symbiosis School of Economics, Pune
-GitHub: [@your-username](https://github.com/your-username)
+
 
 ## License
 
